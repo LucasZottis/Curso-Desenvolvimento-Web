@@ -1,0 +1,21 @@
+.Conteudo{
+    background: blue;
+    border: 1px solid gray;
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin: 10px;
+}
+
+.clear{
+    clear: both;
+}
+
+/* .Conteudo1{
+    background: red;
+    border: 1px solid gray;
+    width: 150px;
+    height: 150px;
+    float: right;
+    margin: 10px;
+} */

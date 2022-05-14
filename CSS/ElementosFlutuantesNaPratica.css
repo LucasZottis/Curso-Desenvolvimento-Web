@@ -1,0 +1,27 @@
+body{
+    background: #F4F4F4;
+}
+
+#Principal{
+    width: 920px;
+}
+
+.Clear{
+    clear: both;
+}
+
+.Noticia{
+    background: #E5E5E5;
+    float: left;
+    padding: 5px;
+    margin: 5px;
+    width: 280px;
+}
+
+.Galeria {
+    background: white;
+    width: 265x;
+    margin: 15px;
+    padding: 5px;
+    float: left;
+}

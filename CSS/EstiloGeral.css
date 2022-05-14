@@ -1,12 +1,24 @@
 #Corpo {
     background-image: url('../HTML/Imagens/Avocado\ background.jpg');
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.Links{
+    text-decoration: none;
+    color: black;
 }
 
 .Modulos {
     background: #D5F394;
     border: 2px solid;
-    margin: 2px;
+    margin: 5px;
     padding: 0 20;
+    width: 300;
+}
+
+.TitulosModulos{
+    font-size: 1.6em;
 }
 
 .Titulo{

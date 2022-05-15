@@ -1,0 +1,38 @@
+body{
+    background: #007FC7;
+}
+
+p{
+    width: 400px;
+}
+
+#Container{
+    background: #fff;
+    margin: 10px auto;
+    padding: 10px;
+    width: 800px;
+    position: relative;
+}
+
+.Absoluto{
+    background: #F2F2F2;
+    border: 1px solid red;
+    position: absolute;
+    top: 80px;
+    right: 80px;
+}
+
+.Fixo{
+    background: #F2F2F2;
+    border: 1px solid red;
+    position: fixed;
+    bottom: 0;
+    right: 10;
+}
+
+.Relativo{
+    border: 1px solid red;
+    position: relative;
+    top: 20;
+    left: 80;
+}

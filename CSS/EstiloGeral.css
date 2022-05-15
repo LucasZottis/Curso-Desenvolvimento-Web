@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 #Corpo {
     background-image: url('../HTML/Imagens/Avocado\ background.jpg');
     font-size: 14px;
@@ -5,32 +10,67 @@
 }
 
 #ConteudoAula{
-    border: 3px solid;
-    padding: 20;
+    padding: 10;
 }
 
 #TituloAula{
+    padding: 5;
+    text-align: center;
+}
+
+#ConteudoAula, #TituloAula {
     border: 3px solid;
+    margin: 2;
+}
+
+#LinkVoltar {
+    margin: 2;
     padding: 10;
     text-align: center;
 }
 
-.Links{
-    background: lightgray;
-    color: black;
-    padding: 7.5;
+#LinkVoltar a{
+    color: green;
+    padding: 5 7.5;
     text-decoration: none;
+}
+
+#LinkVoltar a:link, #LinkVoltar a:visited {
+    background: #9EF6C3;
+}
+
+#LinkVoltar a:hover {
+    background: green;
+    color: #9EF6C3;
 }
 
 .Modulos {
     background: #D5F394;
     border: 2px solid;
     float: left;
-    margin: 5px;
-    padding: 0 20;
+    margin: 10;
+    padding: 10;
     width: 300;
 }
 
-.TitulosModulos{
-    font-size: 1.6em;
+.Modulos h1{
+    font-size: 2em;
+    padding: 5 10;
+    text-align: center;
+}
+
+.Modulos li {
+    margin: 2 auto;
+    padding: 2.5 0;
+    width: 250;
+}
+
+.Modulos a{
+    color: black;
+    text-decoration: none;
+}
+
+.Modulos a:hover{
+    color: green;
+    text-decoration: none;
 }

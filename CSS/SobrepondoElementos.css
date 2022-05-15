@@ -1,0 +1,30 @@
+.Conteudo1{
+    border: 1px solid red;
+    background: orange;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    z-index: 2;
+}
+
+.Conteudo2{
+    border: 1px solid red;
+    background: green;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 80;
+    left: 80;
+    z-index: 1;
+}
+
+.Conteudo3{
+    border: 1px solid red;
+    background: blue;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 160;
+    left: 160;
+    z-index: 0;
+}

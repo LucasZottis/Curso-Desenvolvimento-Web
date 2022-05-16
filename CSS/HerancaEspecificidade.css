@@ -1,0 +1,36 @@
+/* Herança */
+
+/* body{
+    border: 1px solid blue;
+    color: red;
+}
+
+.Pagina{
+    border: 2px solid red;
+} */
+
+/* Especificidade */
+
+/* .Pagina p {
+    color: blue !important;
+}
+
+.Pagina p{
+    color: red;
+} */
+
+*{
+    color: red;
+}
+
+h2 {
+    color: blue;
+}
+
+h2.Verde {
+    color: green;
+}
+
+h2#Amarelo {
+    color: yellow;
+}

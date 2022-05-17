@@ -1,0 +1,31 @@
+ul{
+    list-style-type: none;
+}
+
+ul a{
+    background: #f7b600 url(/HTML/Imagens/arquivos-necessarios-barra-navegacao-vertical/menu.png) no-repeat left bottom;
+    /* border: 1px solid red; */
+    color: #000;
+    display: block;
+    height: 40;
+    line-height: 40px;
+    text-decoration: none;
+    text-indent: 40;
+    width: 200;
+}
+
+a:hover{
+    background-color: #f99200;
+    background-position: right bottom;
+    color: #FFF;
+}
+
+#Home #Navegacao .Home a,
+#Sobre #Navegacao .Sobre a,
+#Servicos #Navegacao .Servico a,
+#Noticia #Navegacao .Noticia a,
+#Contato #Navegacao .Contato a {
+    background-color: #f99200;
+    background-position: right bottom;
+    color: #FFF;
+}

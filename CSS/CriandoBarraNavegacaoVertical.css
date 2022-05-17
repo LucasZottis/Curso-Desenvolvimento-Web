@@ -1,0 +1,29 @@
+/* ul{
+    list-style-type: none;
+}
+
+li{
+    background: url('/HTML/Imagens/arquivos-necessarios-barra-navegacao-vertical/seta.png') no-repeat left center;
+    padding: 5 20;
+} */
+
+ul{
+    list-style-type: none;
+}
+
+ul a{
+    background: url(/HTML/Imagens/arquivos-necessarios-barra-navegacao-vertical/menu.png) no-repeat left bottom;
+    border: 1px solid red;
+    color: #000;
+    display: block;
+    height: 40;
+    line-height: 40px;
+    text-decoration: none;
+    text-indent: 40;
+    width: 200;
+}
+
+a:hover{
+    background-position: right bottom;
+    color: #FFF;
+}

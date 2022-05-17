@@ -46,7 +46,7 @@
 
 .Modulos {
     background: #D5F394;
-    border: 2px solid;
+    border: 2px solid #254A02;
     float: left;
     margin: 10;
     padding: 10;
@@ -59,18 +59,24 @@
     text-align: center;
 }
 
+.Modulos ul {
+    margin: 5;
+}
+
 .Modulos li {
-    margin: 2 auto;
-    padding: 2.5 0;
-    width: 250;
+    list-style-type: none;
 }
 
 .Modulos a{
     color: black;
+    display: block;
+    margin: auto;
+    padding: 5;
     text-decoration: none;
+    width: 250;
 }
 
 .Modulos a:hover{
-    color: green;
-    text-decoration: none;
+    color: white;
+    background: #254A02;
 }

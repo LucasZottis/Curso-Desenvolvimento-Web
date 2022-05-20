@@ -1,0 +1,28 @@
+ul {
+    background: #159cb0 url('/HTML/Imagens/arquivos-necessarios-navegacao-horizontal/fundo-horizontal.png') repeat-x;
+    float: left;
+    list-style: none;
+    width: 720px;
+}
+
+ul li {
+    float: left;
+}
+
+ul a {
+    background: url('/HTML/Imagens/arquivos-necessarios-navegacao-horizontal/divisor.png') repeat-y left top;
+    color: white;
+    display: block;
+    line-height: 2em;
+    padding: 0 2em;
+    text-decoration: none;
+}
+
+ul .Primeiro a {
+    background: none;
+}
+
+ul a:hover{
+    background: #44cade;
+    color: #085662;
+}

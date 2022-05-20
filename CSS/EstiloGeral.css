@@ -10,6 +10,7 @@
 }
 
 #ConteudoAula{
+    clear: both;
     padding: 10;
 }
 
@@ -30,6 +31,7 @@
 }
 
 #LinkVoltar a{
+    clear: both;
     color: green;
     padding: 5 7.5;
     text-decoration: none;

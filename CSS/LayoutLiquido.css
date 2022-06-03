@@ -1,0 +1,56 @@
+body{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background: #f2f2f2;
+}
+
+#Container{
+    width: 80%;
+    margin: 0 auto;
+    background: #fff;
+    min-width: 720px;
+}
+
+#Marca {
+    height: 100px;
+    background: #9e9e9e;
+    text-align: center;
+    line-height: 100px;
+}
+
+#Conteudo{
+    width: 85%;
+    float: right;
+}
+
+#Navegacao{
+    width: 13%;
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #d1d1d1;
+}
+
+#Navegacao ul {
+    list-style: none;
+}
+
+#Navegacao li a {
+    text-decoration: none;
+}
+
+#Rodape{
+    clear: both;
+    background: #c4c4c4;
+    padding: 5px;
+}
+
+#ConteudoPrincipal {
+    width: 63%;
+    float: left;
+}
+
+#ConteudoSecundario {
+    width: 25%;
+    float: right;
+    background: #d1d1d1;
+}

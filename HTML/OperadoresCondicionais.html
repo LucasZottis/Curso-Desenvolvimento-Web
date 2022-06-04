@@ -1,0 +1,44 @@
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../CSS/EstiloGeral.css">
+
+        <title>Aulas 159</title>
+    </head>
+    <body>
+        <h1 id="TituloAula">Operadores de comparação</h1>
+
+        <div id="ConteudoAula">
+            
+        </div>
+
+        <div id="LinkVoltar">
+            <a href="Indice.html">Voltar</a>
+        </div>
+        
+        <script>
+            var igual = 1 == 1
+            var identico = 1 === 2
+            var diferente = 1 != 1
+            var naoIdentico = 1 !== "2"
+            var menor = 1 < 2
+            var maior = 1 > 2
+            var maiorIgual = 0 >= 0
+            var menorIgual = 1 <= 2
+
+            var resultado = "<p> Igual: 1 == 1 = " + igual + "</p>"
+            resultado += "<p> Identico: - 1 === 2 = " + identico + "</p>"
+            resultado += "<p> Diferente: - 1 != 1 = " + diferente + "</p>"
+            resultado += "<p> Não identico: - 1 !== \"2\" = " + naoIdentico + "</p>"
+            resultado += "<p> Menor: 1 < 2 = " + menor + "</p>"
+            resultado += "<p> Maior: 1 > 2 = " + maior + "</p>"
+            resultado += "<p> Maior ou igual: 0 >= 0 = " + maiorIgual + "</p>"
+            resultado += "<p> Menor ou igual: 1 <= 2 = " + menorIgual + "</p>"
+
+            var conteudoAula = document.getElementById('ConteudoAula')
+            conteudoAula.innerHTML = resultado
+        </script>
+    </body>
+</html>

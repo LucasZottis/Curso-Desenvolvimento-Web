@@ -1,0 +1,31 @@
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../CSS/EstiloGeral.css">
+        <title>Aula 161</title>
+    </head>
+    <body>
+        <h1 id="TituloAula">Praticando um pouco amis com operadores de comparação</h1>
+
+        <div id="ConteudoAula">
+            
+        </div>
+
+        <div id="LinkVoltar">
+            <a href="Indice.html">Voltar</a>
+        </div>
+    </body>
+    <script>
+        var conteudoAula = document.getElementById("ConteudoAula")
+        var media = 7
+        var nota = prompt("Digite a nota do aluno")
+
+        if (nota >= media) {
+            conteudoAula.innerText = "Aprovado"
+        } else {
+            conteudoAula.innerText = "Reprovado"
+        }
+    </script>
+</html>

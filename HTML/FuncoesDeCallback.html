@@ -1,0 +1,43 @@
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../CSS/EstiloGeral.css">
+        <title>Aula 179</title>
+    </head>
+    <body>
+        <h1 id="TituloAula">Funções de callback</h1>
+
+        <div id="ConteudoAula">
+            
+        </div>
+
+        <div id="LinkVoltar">
+            <a href="Indice.html">Voltar</a>
+        </div>
+    </body>
+    <script src="../JS/FuncoesGerais.js"></script>
+    <script>
+        var conteudoAula = document.getElementById("ConteudoAula")
+
+        function exibirArtigo(id, callbackSucesso, callbackErro) {
+            if (false) {
+                callbackSucesso("Funções de callback em JS", "Explicação das funções de callback em JS")
+            } else {
+                callbackErro("Erro ao recuperar os dados.")
+            }
+        }
+
+        var callbackSucesso = function(titulo, descricao) {
+            var conteudo = "<h1>" + titulo + "</h1>" + "<hr/>" + "<p>" + descricao + "</p>"
+            EscreverHtmlEmElemento(conteudoAula, conteudo)
+        }
+
+        var callbackErro = function(erro) {
+            EscreverHtmlEmElemento(conteudoAula, "<p>" + erro + "</p>")
+        }
+
+        exibirArtigo(1, callbackSucesso, callbackErro)
+    </script>
+</html>

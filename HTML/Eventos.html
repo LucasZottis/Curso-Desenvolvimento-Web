@@ -9,8 +9,8 @@
     <body>
         <h1 id="TituloAula">Eventos</h1>
 
-        <div onclick="Acao()" onmouseout="Acao2()" id="ConteudoAula">
-
+        <div id="ConteudoAula">
+            <input type="text" onkeypress="AcaoTeclado()">
         </div>
 
         <div id="LinkVoltar">
@@ -19,11 +19,8 @@
     </body>
     <script src="../JS/FuncoesGerais.js"></script>
     <script>
-        function Acao() {
-            alert("O elemento foi clicado.")
-        }
-        function Acao2() {
-            alert("Cursor do mouse deixou a região do elemento.")
+        function AcaoTeclado() {
+            alert("evento disparado.")
         }
     </script>
 </html>

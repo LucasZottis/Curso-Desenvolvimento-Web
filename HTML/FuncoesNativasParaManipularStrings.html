@@ -1,0 +1,66 @@
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../CSS/EstiloGeral.css">
+        <title>Aula 180</title>
+    </head>
+    <body>
+        <h1 id="TituloAula">Funções nativas para manipular strings</h1>
+
+        <div id="ConteudoAula">
+            
+        </div>
+
+        <div id="LinkVoltar">
+            <a href="Indice.html">Voltar</a>
+        </div>
+    </body>
+    <script src="../JS/FuncoesGerais.js"></script>
+    <script>
+        var nome = "Lucas Eduardo Zottis de Souza"
+
+        EscreverTextoEmElemento(conteudoAula, "Nome: " + nome)
+        PularLinha(conteudoAula)
+
+        MostrarCaractereDoNome(nome, 6)
+        PularLinha(conteudoAula)
+
+        MostrarPosicaoCaractereDoNome(nome, "Z")
+        PularLinha(conteudoAula)
+
+        EscreverTextoEmElemento(conteudoAula, nome.replace("Zottis", "Silva"))
+        PularLinha(conteudoAula)
+
+        EscreverTextoEmElemento(conteudoAula, nome.substr(14, 6))
+        PularLinha(conteudoAula)
+
+        EscreverTextoEmElemento(conteudoAula, nome.toLowerCase())
+        PularLinha(conteudoAula)
+
+        EscreverTextoEmElemento(conteudoAula, nome.toUpperCase())
+        PularLinha(conteudoAula)
+
+        EscreverTextoEmElemento(conteudoAula, nome.trim())
+        PularLinha(conteudoAula)
+
+        function MostrarCaractereDoNome(nome, posicao) {
+            if (posicao > nome.length - 1) {
+                EscreverTextoEmElemento(conteudoAula, "Valor de posição maior que a quantidade de caracteres do nome.")
+            } else {
+                EscreverTextoEmElemento(conteudoAula, "Letra: " + nome.charAt(posicao))
+            }
+        }
+
+        function MostrarPosicaoCaractereDoNome(nome, letra) {
+            var posicao = nome.indexOf(letra)
+            
+            if (posicao < 0) {
+                EscreverTextoEmElemento(conteudoAula, "Caractere não existe no nome informado.")
+            } else {
+                EscreverTextoEmElemento(conteudoAula, "Posição: " + posicao)
+            }
+        }
+    </script>
+</html>

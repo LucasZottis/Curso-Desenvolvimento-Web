@@ -4,13 +4,24 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="../CSS/EstiloGeral.css">
-        <title>Aulas 190 e 191</title>
+        <style>
+            input {
+                margin: 10 0;
+            }
+        </style>
+        <title>Aulas 190, 191 e 192</title>
     </head>
     <body>
         <h1 id="TituloAula">DOM</h1>
 
         <div id="ConteudoAula">
-            <input type="text" placeholder="Digite seu nome", id="NomeUsuario" class="CampoTexto" name="Nome" >
+            <input type="text" placeholder="Digite um caractere aqui." name="" id="Entrada" onkeyup="ClassificaCaractere()">
+            <hr>
+            <span>Letras:</span>
+            <input type="text" disabled="disabled" name="" id="ApenasLetras">
+            <span>Números:</span>
+            <input type="text" disabled="disabled" name="" id="ApenasNumeros">
+            <input type="button" name="" id="" value="Limpar" onmouseup="LimparCampos()">
         </div>
 
         <div id="LinkVoltar">
@@ -19,9 +30,34 @@
     </body>
     <script src="../JS/FuncoesGerais.js"></script>
     <script>
-        console.log(document.getElementById("NomeUsuario"))
-        console.log(document.getElementsByClassName("CampoTexto"))
-        console.log(document.getElementsByName("Nome"))
-        console.log(document.getElementsByTagName("input"))
+        function ClassificaCaractere() {
+            var caractere = document.getElementById("Entrada").value.trim()
+            document.getElementById("Entrada").value = ""
+
+            switch(caractere) {
+                case "0":
+                case "1":
+                case "2":
+                case "3":
+                case "4":
+                case "5":
+                case "6":
+                case "7":
+                case "8":
+                case "9": {
+                    document.getElementById("ApenasNumeros").value += caractere
+                    break
+                }
+                default: {
+                    document.getElementById("ApenasLetras").value += caractere
+                    break
+                }
+            }
+        }
+
+        function LimparCampos() {
+            document.getElementById("ApenasNumeros").value = ""
+            document.getElementById("ApenasLetras").value = ""
+        }
     </script>
 </html>

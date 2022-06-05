@@ -4,13 +4,12 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="../CSS/EstiloGeral.css">
-        <link rel="stylesheet" type="text/css" href="../CSS/AtividadeFixacao.css">
-        <title>Aula 185</title>
+        <title>Aulas 185, 186 e 187</title>
     </head>
     <body>
         <h1 id="TituloAula">Eventos</h1>
 
-        <div id="ConteudoAula">
+        <div onclick="Acao()" onmouseout="Acao2()" id="ConteudoAula">
 
         </div>
 
@@ -20,6 +19,11 @@
     </body>
     <script src="../JS/FuncoesGerais.js"></script>
     <script>
-
+        function Acao() {
+            alert("O elemento foi clicado.")
+        }
+        function Acao2() {
+            alert("Cursor do mouse deixou a região do elemento.")
+        }
     </script>
 </html>

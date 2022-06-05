@@ -4,7 +4,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="../CSS/EstiloGeral.css">
-        <title>Aulas 174</title>
+        <title>Aulas 174, 175</title>
     </head>
     <body>
         <h1 id="TituloAula">Funções</h1>
@@ -19,6 +19,14 @@
     </body>
     <script>
         var conteudoAula = document.getElementById("ConteudoAula")
+        var largura = prompt("Digite a largura do terreno em metros")
+        var comprimento = prompt("Digite o comprimento do terreno em metros")
 
+        function CalcularAreaTerreno(largura, comprimento) {
+            var area = largura * comprimento
+            return area
+        }
+
+        conteudoAula.innerText = "O terreno possui " + CalcularAreaTerreno(largura, comprimento) + "m²."
     </script>
 </html>

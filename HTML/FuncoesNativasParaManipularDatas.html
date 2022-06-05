@@ -4,7 +4,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="../CSS/EstiloGeral.css">
-        <title>Aula 182</title>
+        <title>Aulas 182, 183</title>
     </head>
     <body>
         <h1 id="TituloAula">Funções nativas para manipular datas</h1>
@@ -19,8 +19,56 @@
     </body>
     <script src="../JS/FuncoesGerais.js"></script>
     <script>
-        var data = new Date()
-        EscreverTextoEmElemento(conteudoAula, data.getDate() + "/" + data.getMonth() + "/" + data.getFullYear())
+        var data = new Date(2017,0,15)
+        var data1 = new Date(2017,1,23)
+        var diaPorMilisegundos =  1 * 24 * 60 * 60 * 1000
+
+        EscreverTextoEmElemento(conteudoAula, data.toString())
+        PularLinha(conteudoAula)
         
+        EscreverTextoEmElemento(conteudoAula, data1.toString())
+        PularLinha(conteudoAula)
+
+        EscreverTextoEmElemento(conteudoAula, data.getTime())
+        PularLinha(conteudoAula)
+
+        EscreverTextoEmElemento(conteudoAula, data1.getTime())
+        PularLinha(conteudoAula)
+
+        var segundos = (data1.getTime() - data.getTime()) / 1000
+
+        EscreverTextoEmElemento(conteudoAula, segundos)
+        PularLinha(conteudoAula)
+
+        var minutos = segundos / 60
+
+        EscreverTextoEmElemento(conteudoAula, minutos)
+        PularLinha(conteudoAula)
+
+        var horas = minutos / 60
+
+        EscreverTextoEmElemento(conteudoAula, horas)
+        PularLinha(conteudoAula)
+
+        var dias = horas / 24
+
+        EscreverTextoEmElemento(conteudoAula, Math.ceil(dias))
+        PularLinha(conteudoAula)
+
+        // EscreverTextoEmElemento(conteudoAula, data.toString())
+        // PularLinha(conteudoAula)
+
+        // data.setDate(data.getDate() + 1)
+        // EscreverTextoEmElemento(conteudoAula, data.toString())
+        // PularLinha(conteudoAula)
+        
+        // data.setMonth(data.getMonth() + 1)
+        // EscreverTextoEmElemento(conteudoAula, data.toString())
+        // PularLinha(conteudoAula)
+
+        // data.setFullYear(data.getFullYear() + 1)
+        // EscreverTextoEmElemento(conteudoAula, data.toString())
+
+
     </script>
 </html>

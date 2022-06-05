@@ -1,0 +1,36 @@
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../CSS/EstiloGeral.css">
+        <title>Aula 169 e 170</title>
+    </head>
+    <body>
+        <h1 id="TituloAula">Operadores aritméticos</h1>
+
+        <div id="ConteudoAula">
+            
+        </div>
+
+        <div id="LinkVoltar">
+            <a href="Indice.html">Voltar</a>
+        </div>
+    </body>
+    <script>
+        var conteudoAula = document.getElementById("ConteudoAula")
+        var numero1 = prompt("Digite primeiro número")
+        var numero2 = prompt("Digite segundo número")
+
+        numero1 = parseInt(numero1)
+        numero2 = parseInt(numero2)
+
+        conteudoAula.innerText += "A soma entre " + numero1 + " e " + numero2 + " é: " + (numero1 + numero2) + "\n"
+        conteudoAula.innerText += "A subtração entre " + numero1 + " e " + numero2 + " é: " + (numero1 - numero2) + "\n"
+        conteudoAula.innerText += "A multicação entre " + numero1 + " e " + numero2 + " é: " + (numero1 * numero2) + "\n"
+        conteudoAula.innerText += "A divisão entre " + numero1 + " e " + numero2 + " é: " + (numero1 / numero2) + "\n"
+        conteudoAula.innerText += "O módulo entre " + numero1 + " e " + numero2 + " é: " + (numero1 % numero2) + "\n"
+        conteudoAula.innerText += "O incremento de " + numero1 + " é: " + (++numero1) + "\n"
+        conteudoAula.innerText += "O decremento de " + numero1 + " é: " + (--numero1) + "\n"
+    </script>
+</html>

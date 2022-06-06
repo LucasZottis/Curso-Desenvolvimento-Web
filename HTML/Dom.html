@@ -4,42 +4,41 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="../CSS/EstiloGeral.css">
+
         <style>
             button {
                 margin: 10 0;
-                padding: 2.5 5;
-            }
-            
-            #BotaoResetar{
-                width: 60;
-                height: 60;
             }
 
-            #DivAfetada{
-                border: 1pc solid black;
-                width: 100px;
-                height: 100px;
-                margin: 10;
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                align-items: center;
+            .Estilo1 {
+                display: block;
+                height: 25;
+                text-align: center;
+                background-color: red;
+                margin: 4;
+                padding: 2;
+            }
+
+            .Estilo2 {
+                display: block;
+                height: 25;
+                text-align: center;
+                background-color: green;
+                margin: 4;
+                padding: 2;
             }
         </style>
-        <title>Aulas 190, 191, 192 e 193</title>
+
+        <title>Aulas 190, 191, 192, 193 e 194</title>
     </head>
     <body>
         <h1 id="TituloAula">DOM</h1>
 
         <div id="ConteudoAula">
-            <h3>Manipulando estilos</h3>
-            <button type="button" onclick="modificaEstilo('#FF0000')">Vermelho</button>
-            <button type="button" onclick="modificaEstilo('#00FF00')">Verde</button>
-            <button type="button" onclick="modificaEstilo('#0000FF')">Azul</button>
+            <h3>Modificando a classe</h3>
+            <h4 id="Mensagem" class="Estilo1">Classe 1</h4>
             <hr>
-            <div id="DivAfetada">
-                <button type="button" onclick="modificaEstilo('#000000')" id="BotaoResetar">Resetar</button>
-            </div>
+            <button type="button" onclick="ModificarClasse()">Aplicar modificação</button>
         </div>
 
         <div id="LinkVoltar">
@@ -48,8 +47,8 @@
     </body>
     <script src="../JS/FuncoesGerais.js"></script>
     <script>
-        function modificaEstilo(corFundo) {
-            document.getElementById("DivAfetada").style.borderColor = corFundo
+        function ModificarClasse() {
+            document.getElementById("Mensagem").className = "Estilo2"
         }
     </script>
 </html>

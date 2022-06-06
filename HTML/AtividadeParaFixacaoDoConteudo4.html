@@ -1,0 +1,65 @@
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../CSS/EstiloGeral.css">
+        <style>
+            ul{
+                padding: 0 15;
+            }
+
+            .Enunciado {
+                margin: 10 0;
+            }
+        </style>
+        <title>Aula 195</title>
+    </head>
+    <body>
+        <h1 id="TituloAula">Atividade de fixação do conteúdo</h1>
+
+        <div id="ConteudoAula">
+            <div class="Enunciado">
+                <h3>1) Crie um campo (input type="text") e aplique os seguintes controles com base nos
+                    eventos abaixo:</h3>
+                <br>
+    
+                <h3>Considere os seguintes critérios:</h3>
+                <br>
+    
+                <ul>
+                    <li>
+                        No evento de foco modifique o background do input para amarelo.
+                    </li>
+                    <li>
+                        Quando o campo perder o foco, recupere o seu respectivo valor e:
+    
+                        <ul>
+                            <li>
+                                Caso o conteúdo contido no campo tenha menos de 3 caracteres o mesmo
+                                deve ter seu background alterado para vermelho.
+                            </li>
+                            <li>
+                                Caso o conteúdo contido no campo tenha 3 caracteres ou mais o background
+                                deve ser alterado para verde.
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+            <div id="Resposta" class="Enunciado">
+                <p>Resposta:</p>
+                <div>
+                    <input type="text" id="CaixaTexto" onfocus="AoFocar()" onblur="AoPerderFoco()">
+                </div>
+            </div>
+        </div>
+
+        <div id="LinkVoltar">
+            <a href="Indice.html">Voltar</a>
+        </div>
+    </body>
+    <script src="../JS/FuncoesGerais.js"></script>
+    <script src="../JS/AtividadeParaFixacaoDoConteudo4.js"></script>
+</html>
